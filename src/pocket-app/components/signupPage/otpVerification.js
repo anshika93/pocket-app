@@ -19,13 +19,17 @@ export default function OtpVerification() {
                         <form className="modal-content animate" method="post">
 
                             <div className="container">
-                            <label >Phone Number</label><br />
+                            <label >Otp varfication</label><br />
                                 <div className="otp_numbers">
                                    <input className="otp_number_boxes" type="text" />
-                                   
+                                   <input className="otp_number_boxes" type="text" />
+                                   <input className="otp_number_boxes" type="text" />
+                                   <input className="otp_number_boxes" type="text" />
+                                   <input className="otp_number_boxes" type="text" />
+                                   <input className="otp_number_boxes" type="text" />
                                 </div>
                             
-                                <button type="submit">Verify and Proceed</button>
+                                <button type="submit"> <Link to='/verifyAndProceed'>Verify and Proceed</Link> </button>
                                 <p className="emailSignUp">Want to SignUp with <span><Link to='/email'>Email</Link></span>  </p>
                             </div>
 

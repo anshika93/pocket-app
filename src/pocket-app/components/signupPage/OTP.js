@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-export default function OTP(){
+export default function OTP(props){
+    const location = useLocation()
+  const { data } = location.state
+    console.log(" data =>", data.phonenumber);
+    console.log(" data =>", data.email);
+    console.log(" data =>", data.password);
     return(
         <>
            <div className="main-page">
